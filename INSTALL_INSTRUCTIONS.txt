@@ -1,0 +1,26 @@
+M11 Judge the Model - Streamlit code overlay
+
+1. On https://snsie.github.io/classification-activity/ click Download the starter (.zip).
+2. Extract the official starter ZIP on your computer.
+3. Copy the files from THIS overlay into the extracted starter folder, allowing replacement of streamlit_app.py:
+   - analysis/models.py -> official starter's analysis/models.py
+   - streamlit_app.py -> official starter's streamlit_app.py
+   - run_app.sh -> official starter's run_app.sh
+4. KEEP ALL other files in the official starter, especially data/, results/, m11.py, check.py, analysis/data.py, DECISIONS.md, requirements.txt.
+5. Using Git Bash inside the starter folder:
+   uv venv --python 3.11
+   source .venv/Scripts/activate     (Windows Git Bash)
+   uv pip install -r requirements.txt
+   python check.py --stage setup
+6. Before viewing full model results, complete your personal 'Before results' answers in DECISIONS.md and make a Git commit, as required by the professor.
+7. Then run:
+   python -m analysis
+   python check.py --stage results
+8. Run YOUR app locally:
+   bash run_app.sh
+   Open http://localhost:8501 and test each section.
+9. Complete your own recommendations/design decisions in DECISIONS.md, rerun python -m analysis and python check.py.
+10. Push the starter and generated results/ to your public GitHub repository and deploy streamlit_app.py to Streamlit Community Cloud.
+11. Put the deployed app URL on README line 1, push it, test incognito, submit GitHub repository link and your own Canvas answers.
+
+IMPORTANT: End-to-end testing against the official starter has not been verified here. To verify: run python -m analysis, confirm python check.py --stage results passes with every test AUROC matching the instructor reference, and confirm all three app sections render for both datasets.
