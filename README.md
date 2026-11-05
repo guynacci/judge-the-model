@@ -1,4 +1,4 @@
-**App:** _paste your public app link here_
+**App:** https://guynacci-judge-the-model.streamlit.app/
 
 # Judge the Model
 
